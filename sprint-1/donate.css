@@ -1,0 +1,70 @@
+.heading{
+	padding: 50px;
+}
+.header{
+	height: 50vh;
+
+}
+header{
+	background-size: cover;
+	background-attachment: fixed;
+    background-position: center;
+    background-image: url(/Users/burtinagraham/Desktop/sprint-1/IMG_5194.JPG);
+	height: 100vh;
+	
+}
+.navbar-style{
+	box-shadow: 0 5px 10px #efefef;
+}
+.logo{
+	height: 50px;
+	padding: 2px 10px;
+}
+/* what does this do, and what class can it be found in*/
+.icon-bar{
+    background: red;
+}   
+
+.footer{
+	background: #800000;
+	color: #d3d3d3;
+	height: 400px;
+}
+.footer .footer-bottom{
+	background: #6b0000;
+	color: #686868;
+	height: 50px;
+	text-align: center;
+	width: 100%;
+	position: absolute;
+	padding-top: 15px;
+	left: 0px;
+}
+.footer .footer-content{
+	border: 1px solid red;
+	display: flex;
+	height: 350px;
+}
+.footer .footer-content .footer-section{
+	flex: 1;
+	padding: 25px;
+	padding-right: 50px;
+	padding-left: 75px;
+}
+html, body{
+	height: 100%
+	padding: 0px;
+	margin: 0px;
+	background: #f6f6f6; 
+	font-family: 'Lora', serif;
+}
+.link{
+	color: gold;
+}
+
+.work {
+	border-style: outset;
+		width: 85%;
+		height: 100px;
+		border: 1px solid;
+}
