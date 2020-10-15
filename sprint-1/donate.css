@@ -1,18 +1,25 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
 .heading{
 	padding: 50px;
 }
 .header{
-	height: 50vh;
+	height: 10vh;
 
 }
 header{
-	background-size: cover;
-	background-attachment: fixed;
-    background-position: center;
-    background-image: url(/Users/burtinagraham/Desktop/sprint-1/IMG_5194.JPG);
-	height: 100vh;
+
+	height: 40vh;
 	
 }
+
+.navbar .navbar-nav .nav-item .nav-link:hover,.navbar .navbar-nav .nav-item .nav-link:active{
+	color: gold;
+}
+
 .navbar-style{
 	box-shadow: 0 5px 10px #efefef;
 }
@@ -52,8 +59,8 @@ header{
 	padding-left: 75px;
 }
 html, body{
-	height: 100%
-	padding: 0px;
+	height: 100%;
+	padding:0px;
 	margin: 0px;
 	background: #f6f6f6; 
 	font-family: 'Lora', serif;
@@ -62,9 +69,9 @@ html, body{
 	color: gold;
 }
 
-.work {
-	border-style: outset;
-		width: 85%;
-		height: 100px;
-		border: 1px solid;
+.work{
+	padding:20px
+}
+.main{
+	padding-right:30%;
 }
