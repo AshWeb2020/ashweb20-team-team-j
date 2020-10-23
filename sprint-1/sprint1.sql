@@ -1,7 +1,7 @@
-create database sprint1;
-use sprint1;
+create database GJ2022;
+use GJ2022;
 
-create table newMembership(
+create table membership(
 person_id mediumint unsigned auto_increment primary key,
 first_name varchar(40),
 last_name varchar(40),
@@ -13,7 +13,7 @@ course enum("Business Adminstration","Management Information System","Computer s
 );
 
 create table activity(
-person_id mediumint unsigned auto_increment primary key,
+activity_id mediumint unsigned auto_increment primary key,
 activityName varchar(40),
 activityDate date not null,
 description mediumtext,
@@ -21,4 +21,11 @@ status enum("register","not register"),
 location varchar(14),
 image blob
 );
+create table member_activity(
+activity_id mediumint unsigned,
+foreign key(activity_id) REFERENCES activity (activity_id),
+member_id mediumint unsigned,
+foreign key(member_id) references art (member_id)
+);
+
 
