@@ -11,14 +11,18 @@
 		$Year = $_POST['year'];
 		$Course = $_POST['course'];
 
-		$conn = mysqli_connect('localhost', 'root', 'root', 'sprint1');
-
-
-		if($conn === false){
-    		die("ERROR: Could not connect. " . mysqli_connect_error());}
+		$conn = mysqli_connect('localhost', 'root', 'root', 'Leoclub');
+		if ($conn){
+			echo "Connected successfully";
+		}else{
+			die("Connection failed: " . mysqli_connect_error());
 		}
 
 		$sql = "INSERT INTO newMembership(first_name, last_name, gender, email, pssword, confirm_pssword, phonenumber, yearGroup, course) VALUES ('$Fname', '$Lname', 	'$Sex', '$Mail', '$Password', '$Cpassword', '$Phone', '$Year', '$Course')";
 
-		mysqli_query($conn, $sql);
- ?>
+		if (mysqli_query($conn, $sql)){
+			echo "Your registration was successful!";
+		}else{
+			echo "Error with query";
+		}
+ }
