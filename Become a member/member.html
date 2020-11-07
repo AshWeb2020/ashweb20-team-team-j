@@ -7,6 +7,8 @@
 
     <title>Become a member</title>
 
+    <link href='https://fonts.googleapis.com/css?family=Almendra' rel='stylesheet'>
+
     <link rel = "stylesheet" type = "text/css" href = "member.css">
     
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
@@ -17,26 +19,29 @@
 
   <body>
     
+    
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 			<div class="container">
 				<div class="navbar-header">
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu-icon" aria-controls="menu-icon" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
-					<a href="../Home/Home.html"><img class="logo" src="./PHOTO-2020-10-23-22-06-12.jpg"></a>
+					<a href=""><img class="logo" src="logo.jpg"></a>
 				</div>
 				<div class="collapse navbar-collapse" id="menu-icon">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item active"><a class="nav-link" href="../Home/Home.html">Home</a></li>
-					<li class="nav-item active"><a class="nav-link" href="../Become a member/member.html">Become A Member</a></li>
-					<li class="nav-item active"><a class="nav-link" href="../UpcomingActivities/activities.html">Upcoming Events</a></li>
-					<li class="nav-item active"><a class="nav-link" href="../Leadership/index.html">Leadership</a></li>
-					<li class="nav-item active"><a class="nav-link" href="../sprint-1/donate.html">Donate</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="../Become a member/member.html">Become A Member</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="../UpcomingActivities/activities.html">Upcoming Events</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="../leadership/index.html">Leadership</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="../sprint-1/donate.html">Donate</a></li>
 				</ul>
 				</div>
 			</div>
-		</nav>
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    </nav>
+    
+    
+    <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -61,88 +66,96 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
-    </div>
+    </div> -->
 
-    <div class = "center">
-      <h1 >Become A Member</h1>
+    <!-- <img src="brown.png" alt="Trulli" width="100%" height="333"> -->
 
-    </div>
-
-    
-    <div class="area">
-    <section class = "container-fluid">
-      <section class="row align-items-center justify-content-center">
-        <section class = "col-12 col-sm-6 col-md-3">
-          <form class = "form-container" action="../Leo.php" method="POST">
-            <div class="form-group">
-              <label>First Name</label>
-              <input type="text" class="form-control" id="fname" name="first" placeholder="first name">
-            </div>
-            <div class="form-group">
-              <label>Last Name</label>
-              <input type="text" class="form-control" id="lname" name = "last" placeholder="last name">
-            </div>  
-
-            <div class="form-group">
-              <label>Gender</label>
-              <select class="form-control" id="exampleFormControlSelect1" placeholder="Gender" name="gender">
-                <option>Male</option>
-                <option>Female</option>
-
-              </select>
-            </div>
-              
-            <div class="form-group">
-              <label>Email address</label>
-              <input type="email" class="form-control" name="mail" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="eg. kanye.west@ashesi.edu.gh">
-            </div>
-
-            <div class="form-group">
-              <label for="pwd">Password:</label>
-              <input type="password" class="form-control" id="pwd" name = "password" placeholder="password">
-            </div>
-
-            <div class="form-group">
-              <label for="pwd">Confirm Password:</label>
-              <input type="password" class="form-control" id="pwd" name = "Cpassword" placeholder="password">
-            </div>
-
-            <div class="form-group">
-              <label>Phone number</label>
-              <input type="text" class="form-control" id="phone" name="phone" placeholder="eg.0224442455">
-            </div>
-
-            <div class="form-group">
-              <label>Year Group</label>
-              <select class="form-control" id="exampleFormControlSelect1" name="year">
-                <option>Year Group</option>
-                <option>2021</option>
-                <option>2022</option>
-                <option>2023</option>
-                <option>2024</option>
-              </select>
-            </div>
-
-            <div class="form-group">
-              <label>Course</label>
-              <select class="form-control" id="exampleFormControlSelect1" name="course">
-                <option>Course</option>
-                <option>CS</option>
-                <option>BA</option>
-                <option>CE</option>
-                <option>ME</option>
-              </select>
-            </div>
+    <div>
+        <div class = "center">
+            <h1 >Become A Member</h1>
+      
+          </div>
+      
           
+          <div class="area ">
+          <!-- <section class = "container-fluid">
+            <section class="row align-items-center justify-content-center">
+              <section class = "col-12 col-sm-6 col-md-3"> -->
+                <form class = "form-container form-row needs-validation">
+                  <div class="form-group col-md-6">
+                    <label>First Name</label>
+                    <input type="text" class="form-control" id="fname" name="first" placeholder="first name">
+                    <div class="invalid-feedback">fill this side</div>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label>Last Name</label>
+                    <input type="text" class="form-control" id="lname" name = "last" placeholder="last name">
+                  </div>  
+      
+                  <div class="form-group col-md-3">
+                    <label>Gender</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>Gender</option>
+                      <option>Male</option>
+                      <option>Female</option>
+      
+                    </select>
+                  </div>
+                    
+                  <div class="form-group col-md-9">
+                    <label>Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="eg. kanye.west@ashesi.edu.gh">
+                  </div>
+      
+                  <div class="form-group col-md-6">
+                    <label for="pwd">Password:</label>
+                    <input type="password" class="form-control" id="pwd" name = "password" placeholder="Create password">
+                  </div>
+      
+                  <div class="form-group col-md-6">
+                    <label for="pwd">Confirm Password:</label>
+                    <input type="password" class="form-control" id="pwd" name = "password" placeholder="Confirm password">
+                  </div>
+      
+                  <div class="form-group col-md-6">
+                    <label>Phone number</label>
+                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="eg.0224442455">
+                  </div>
+      
+                  <div class="form-group col-md-3">
+                    <label>Year Group</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>Year Group</option>
+                      <option>2021</option>
+                      <option>2022</option>
+                      <option>2023</option>
+                      <option>2024</option>
+                    </select>
+                  </div>
+      
+                  <div class="form-group col-md-3">
+                    <label>Course</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>Course</option>
+                      <option>CS</option>
+                      <option>BA</option>
+                      <option>CE</option>
+                      <option>ME</option>
+                    </select>
+                  </div>
+                
+      
+                  <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                </form>
+      
+              <!-- </section>
+            </section>
+          </section> -->
+        </div>
+      
+    </div>
 
-            <button type="submit" name="submit" class="btn btn-primary btn-block">Submit</button>
-          </form>
-
-        </section>
-      </section>
-    </section>
-  </div>
-    
+        
 
     <div class="footer">
       <div class="footer-content">

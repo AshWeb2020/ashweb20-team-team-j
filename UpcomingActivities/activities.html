@@ -100,8 +100,11 @@
                 Phasellus imperdiet, nulla et dictum interdum, nisi
                 lorem egestas odio, vitae scelerisque enim ligula venenatis dolor.</p>
             <p><strong>Date: 30 October 2020</strong></p>
-            <p><button>Register</button></p>
+            <button onclick="openForm()">Register</button>
+
+            
         </div>
+ 
         <div class='event'>
             <p><img class='img' src='mai-khao-beach-phuket-thailand-june-222018-dirty-beach-along-the-shoreline.jpg'></p>
             <p class='leader'>Kokrobite Beach Clean Up</p>
@@ -109,7 +112,7 @@
                 Phasellus imperdiet, nulla et dictum interdum, nisi
                 lorem egestas odio, vitae scelerisque enim ligula venenatis dolor.</p>
             <p><strong>Date: 30 October 2020</strong></p>
-            <p><button>Register</button></p>
+            <button onclick="openForm()">Register</button>
         </div>
     </div>
 
@@ -121,7 +124,7 @@
                 Phasellus imperdiet, nulla et dictum interdum, nisi
                 lorem egestas odio, vitae scelerisque enim ligula venenatis dolor.</p>
             <p><strong>Date: 30 October 2020</strong></p>
-            <button>Register</button>
+            <button onclick="openForm()">Register</button>
         </div>
         <div class='event' >
         <p><img class='img' src='mai-khao-beach-phuket-thailand-june-222018-dirty-beach-along-the-shoreline.jpg'></p>
@@ -130,7 +133,7 @@
                 Phasellus imperdiet, nulla et dictum interdum, nisi
                 lorem egestas odio, vitae scelerisque enim ligula venenatis dolor.</p>
         <p><strong>Date: 30 October 2020</strong></p>
-        <button>Register</button>
+        <button onclick="openForm()">Register</button>
         </div>
     </div>
 
@@ -142,7 +145,7 @@
                 Phasellus imperdiet, nulla et dictum interdum, nisi
                 lorem egestas odio, vitae scelerisque enim ligula venenatis dolor.</p>
             <p><strong>Date: 30 October 2020</strong></p>
-            <p><button>Register</button></p>
+            <button onclick="openForm()">Register</button>
 
         </div>
         <div class='event'>
@@ -152,9 +155,28 @@
                 Phasellus imperdiet, nulla et dictum interdum, nisi
                 lorem egestas odio, vitae scelerisque enim ligula venenatis dolor.</p>
             <p><strong>Date: 30 October 2020</strong></p>
-            <p><button>Register</button></p>
+            <button onclick="openForm()">Register</button>
         </div>
     </div>
+
+    <div class="form-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+          <h1><center>Register </center></h1>
+      
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required>
+      
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+      
+          <button type="submit" class="btn">Login</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+      </div>
+
+
+
+
 </div>
 
 
@@ -187,6 +209,16 @@
         &copy; Copyright 2018 Ashesi Leo Club | All rights reserved.
     </div>
 </div>
+
+<script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+    
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+    </script>
 
 </body>
 </html>
