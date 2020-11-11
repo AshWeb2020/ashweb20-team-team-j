@@ -10,6 +10,10 @@
 		$Year = $_POST['year'];
 		$Course = $_POST['course'];
 
+		// hash the password
+		$pass_hash = password_hash($Password, PASSWORD_DEFAULT);
+
+
 		$conn = mysqli_connect('localhost', 'root', 'root', 'Leoclub');
 		if ($conn){
 			echo "Connected successfully";
@@ -17,7 +21,7 @@
 			die("Connection failed: " . mysqli_connect_error());
 		}
 
-		$sql = "INSERT INTO newMembership(first_name, last_name, gender, email, pssword, phonenumber, yearGroup, course) VALUES ('$Fname', '$Lname', '$Sex', '$Mail', '$Password', '$Phone', '$Year', '$Course')";
+		$sql = "INSERT INTO newMembership(first_name, last_name, gender, email, pssword, phonenumber, yearGroup, course) VALUES ('$Fname', '$Lname', '$Sex', '$Mail', '$pass_hash', '$Phone', '$Year', '$Course')";
 
 		if (mysqli_query($conn, $sql)){
 			echo "Your registration was successful!";
