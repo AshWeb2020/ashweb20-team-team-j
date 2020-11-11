@@ -5,11 +5,12 @@ create table membership(
 person_id mediumint unsigned auto_increment primary key,
 first_name varchar(40),
 last_name varchar(40),
+gender char(20),
 email varchar(50),
+password varchar(200),
 phonenumber varchar(25),
-gender enum('m','f'),
-yearGroup enum("2021", "2022","2023","2024"),
-course enum("Business Adminstration","Management Information System","Computer science","Mechanical Engineering","Electrical and Electronic Engineering","Computer Engineering")
+yearGroup varchar(20),
+course char(100)
 );
 
 create table activity(

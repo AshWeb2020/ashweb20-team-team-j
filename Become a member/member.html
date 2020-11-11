@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="../Leo.js" type="text/javascript"></script>
   </head>
 
   <body>
@@ -81,7 +82,7 @@
           <!-- <section class = "container-fluid">
             <section class="row align-items-center justify-content-center">
               <section class = "col-12 col-sm-6 col-md-3"> -->
-                <form class = "form-container form-row needs-validation">
+                <form name="leoForm" class = "form-container form-row needs-validation" onclick="return validatePassword()" action="../Leo.php" method="POST">
                   <div class="form-group col-md-6">
                     <label>First Name</label>
                     <input type="text" class="form-control" id="fname" name="first" placeholder="first name">
@@ -114,7 +115,7 @@
       
                   <div class="form-group col-md-6">
                     <label for="pwd">Confirm Password:</label>
-                    <input type="password" class="form-control" id="pwd" name = "password" placeholder="Confirm password">
+                    <input type="password" class="form-control" id="pwd" name = "confirm_password" placeholder="Confirm password">
                   </div>
       
                   <div class="form-group col-md-6">
