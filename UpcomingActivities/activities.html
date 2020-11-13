@@ -138,7 +138,7 @@
           <input type="password" placeholder="Enter Password" name="psw" required>
       
           <button type="submit" class="btn" style="background-color:green;  padding: 10px;">Register</button>
-          <button type="submit" class="btn clear" style="background-color:blue; padding: 10px;">Become a member</button>
+          <button type="submit" name="submit" class="btn clear" style="background-color:blue; padding: 10px;">Become a member</button>
         </form>
       </div>
 
@@ -179,6 +179,10 @@
 </div>
 
 <script>
+    function openRegistration(){
+        window.location = '../Become a member/member.html';
+    }
+    document.getElementsByName("submit")[0].onclick = openRegistration;
     function openForm() {
       document.getElementById("myForm").style.display = "block";
     }

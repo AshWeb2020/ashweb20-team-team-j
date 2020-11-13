@@ -14,11 +14,9 @@
 		$pass_hash = password_hash($Password, PASSWORD_DEFAULT);
 
 
-		$conn = mysqli_connect('localhost', 'root', 'root', 'Leoclub');
-		if ($conn){
-			echo "Connected successfully";
-		}else{
-			die("Connection failed: " . mysqli_connect_error());
+		$conn = mysqli_connect('localhost', 'root', 'root', 'sprint1');
+		if (!$conn) {
+    		die('Connection failed: ' . mysqli_connect_error());
 		}
 
 		$sql = "INSERT INTO newMembership(first_name, last_name, gender, email, pssword, phonenumber, yearGroup, course) VALUES ('$Fname', '$Lname', '$Sex', '$Mail', '$pass_hash', '$Phone', '$Year', '$Course')";

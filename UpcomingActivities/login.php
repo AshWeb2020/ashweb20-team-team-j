@@ -1,7 +1,7 @@
 <?php 
 
 // create connection
-$conn = mysqli_connect('localhost', 'root', '', 'Leoclub');
+$conn = mysqli_connect('localhost', 'root', 'root', 'sprint1');
 
 // check connection
 if (!$conn) {
@@ -27,7 +27,7 @@ if (mysqli_num_rows($result) != 1) {
 $user = mysqli_fetch_assoc($result);
 
 // verify user password match
-$verify_pass = password_verify($upass, $user['password']);
+$verify_pass = password_verify($upass, $user['pssword']);
 
 // set user session if password is verified
 if ($verify_pass) {
@@ -35,6 +35,6 @@ if ($verify_pass) {
 	echo("<script>window.location = './UpcomingActivities/activities.html';</script>");
 }else{
 	echo("<script>alert('password is incorrect!')</script>");
-	echo("<script>window.location = './UpcomingActivities/activities.html';</script>");
+	echo("<script>window.location = 'activities.html';</script>");
 }
  ?>
