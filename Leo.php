@@ -13,8 +13,8 @@
 		// hash the password
 		$pass_hash = password_hash($Password, PASSWORD_DEFAULT);
 
-
-		$conn = mysqli_connect('localhost', 'root', 'root', 'sprint1');
+		$dbpassword = getenv('MYSQLPASS') ?? "";
+		$conn = mysqli_connect('localhost', 'root', $dbpassword, 'GJ2022');
 		if (!$conn) {
     		die('Connection failed: ' . mysqli_connect_error());
 		}

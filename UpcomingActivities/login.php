@@ -1,7 +1,8 @@
 <?php 
 
 // create connection
-$conn = mysqli_connect('localhost', 'root', 'root', 'sprint1');
+$dbpassword='';
+$conn = mysqli_connect('localhost', 'root',$dbpassword , 'GJ2022');
 
 // check connection
 if (!$conn) {
