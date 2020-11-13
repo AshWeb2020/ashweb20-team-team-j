@@ -13,7 +13,7 @@ $mail = $_POST['email'];
 $upass = $_POST['psw'];
 
 // write query
-$sql = "SELECT * FROM Users WHERE email = '$mail'";
+$sql = "SELECT * FROM newmembership WHERE email = '$mail'";
 
 // execute query
 $result = mysqli_query($conn, $sql);
@@ -31,7 +31,10 @@ $verify_pass = password_verify($upass, $user['password']);
 
 // set user session if password is verified
 if ($verify_pass) {
-    session_start();
-    $_SESSION['user'] = $user['username'];
+	echo "Success";
+    // session_start();
+    // $_SESSION['user'] = $user['username'];
+}else{
+	echo "Password incorrect";
 }
  ?>

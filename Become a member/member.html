@@ -82,7 +82,7 @@
           <!-- <section class = "container-fluid">
             <section class="row align-items-center justify-content-center">
               <section class = "col-12 col-sm-6 col-md-3"> -->
-                <form name="leoForm" class = "form-container form-row needs-validation" onclick="return validatePassword()" action="../Leo.php" method="POST">
+                <form name="leoForm" class = "form-container form-row needs-validation" action="../Leo.php" method="POST">
                   <div class="form-group col-md-6">
                     <label>First Name</label>
                     <input type="text" class="form-control" id="fname" name="first" placeholder="first name">
@@ -146,7 +146,7 @@
                   </div>
                 
       
-                  <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                  <button type="submit" class="btn btn-primary btn-block" name="submit">Submit</button>
                 </form>
       
               <!-- </section>
@@ -187,7 +187,20 @@
       </div>
     </div>
            
+  <script>
+    var password = document.getElementById("password");
+    var confirm_password = document.getElementById("confirm_password");
+    function validatePassword(){
 
+      if(password.value != confirm_password.value){
+        confirm_password.setCustomValidity("Passwords Don't Match");
+      }else{
+        confirm_password.setCustomValidity('');
+      }
+    }
+
+    document.getElementsByName("submit")[0].onclick = validatePassword;
+  </script>
   </body>
 
 </html>
