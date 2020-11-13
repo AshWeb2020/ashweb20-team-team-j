@@ -31,10 +31,10 @@ $verify_pass = password_verify($upass, $user['password']);
 
 // set user session if password is verified
 if ($verify_pass) {
-	echo "Success";
-    // session_start();
-    // $_SESSION['user'] = $user['username'];
+	echo("<script>alert('Registration was successful!')</script>");
+	echo("<script>window.location = './UpcomingActivities/activities.html';</script>");
 }else{
-	echo "Password incorrect";
+	echo("<script>alert('password is incorrect!')</script>");
+	echo("<script>window.location = './UpcomingActivities/activities.html';</script>");
 }
  ?>

@@ -24,7 +24,8 @@
 		$sql = "INSERT INTO newMembership(first_name, last_name, gender, email, pssword, phonenumber, yearGroup, course) VALUES ('$Fname', '$Lname', '$Sex', '$Mail', '$pass_hash', '$Phone', '$Year', '$Course')";
 
 		if (mysqli_query($conn, $sql)){
-			echo "Your registration was successful!";
+			echo("<script>alert('Registration was successful!')</script>");
+ 			echo("<script>window.location = './Home/Home.html';</script>");
 		}else{
 			echo "Error with query";
 		}
