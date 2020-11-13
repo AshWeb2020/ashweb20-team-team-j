@@ -25,8 +25,8 @@ image blob
 create table member_activity(
 activity_id mediumint unsigned,
 foreign key(activity_id) REFERENCES activity (activity_id),
-member_id mediumint unsigned,
-foreign key(member_id) references art (member_id)
+person_id mediumint unsigned,
+foreign key(person_id) references membership (person_id)
 );
 
 
