@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Upcoming Events</title>
     <link rel='stylesheet' href='./style.css'>
+    <link rel = "icon" href = "logo.jpg" type = "image/x-icon">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
 
@@ -124,7 +126,10 @@
 
     <div class="form-popup" id="myForm">
         <form action="login.php" class="form-container" method="POST">
-          <h1><center>Register </center></h1>
+            <button type="button" class="close" aria-label="Close" onclick="closeForm()">
+                <span aria-hidden="true">&times;</span>
+              </button>
+          <h2 style="align-items: left;">Register</h2>
       
           <label for="email"><b>Email</b></label>
           <input type="text" placeholder="Enter Email" name="email" required>
@@ -132,8 +137,8 @@
           <label for="psw"><b>Password</b></label>
           <input type="password" placeholder="Enter Password" name="psw" required>
       
-          <button type="submit" class="btn">Login</button>
-          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+          <button type="submit" class="btn" style="background-color:green;  padding: 10px;">Register</button>
+          <button type="submit" class="btn clear" style="background-color:blue; padding: 10px;">Become a member</button>
         </form>
       </div>
 
