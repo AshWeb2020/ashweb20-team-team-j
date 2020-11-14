@@ -14,7 +14,7 @@ $mail = $_POST['email'];
 $upass = $_POST['psw'];
 
 // write query
-$sql = "SELECT * FROM newmembership WHERE email = '$mail'";
+$sql = "SELECT * FROM membership WHERE email = '$mail'";
 
 // execute query
 $result = mysqli_query($conn, $sql);
