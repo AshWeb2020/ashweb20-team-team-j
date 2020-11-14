@@ -1,8 +1,8 @@
 <?php 
 
 // create connection
-$dbpassword='';
-$conn = mysqli_connect('localhost', 'root',$dbpassword , 'GJ2022');
+$dbpassword = getenv('MYSQLPASS') ?? "";
+$conn = mysqli_connect('localhost', 'root', $dbpassword , 'GJ2022');
 
 // check connection
 if (!$conn) {
