@@ -153,11 +153,11 @@ button:hover{
 
 }
 
-.wrapper{
-	margin: 0 auto;
-	padding: 60px;
+/* .wrapper{
+	/* margin: 0 auto;
+	padding: 60px; */
 	
-}
+} */
 
 h2{
 	margin: 30px;
@@ -169,6 +169,10 @@ h2{
 
 .event-test{
 	float:right;
+}
+
+.padding{
+	padding: 15px 15px 15px 15px;
 }
 
 
