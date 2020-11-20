@@ -2,7 +2,7 @@
 
 // create connection
 $dbpassword = getenv('MYSQLPASS') ?? "";
-$conn = mysqli_connect('localhost', 'root', $dbpassword , 'GJ2022');
+$conn = mysqli_connect('localhost', 'root', $dbpassword , 'gj2022');
 
 // check connection
 if (!$conn) {
@@ -28,7 +28,7 @@ if (mysqli_num_rows($result) != 1) {
 $user = mysqli_fetch_assoc($result);
 
 // verify user password match
-$verify_pass = password_verify($upass, $user['pssword']);
+$verify_pass = password_verify($upass, $user['password']);
 
 // set user session if password is verified
 if ($verify_pass) {

@@ -14,7 +14,7 @@
 		$pass_hash = password_hash($Password, PASSWORD_DEFAULT);
 
 		$dbpassword = getenv('MYSQLPASS') ?? "";
-		$conn = mysqli_connect('localhost', 'root', $dbpassword, 'GJ2022');
+		$conn = mysqli_connect('localhost', 'root', $dbpassword, 'gj2022');
 		if (!$conn) {
     		die('Connection failed: ' . mysqli_connect_error());
 		}
@@ -28,3 +28,5 @@
 			echo "Error with query";
 		}
  }
+
+?>
