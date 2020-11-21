@@ -67,15 +67,20 @@ li a{
   left: 0px;
 }
 .footer .footer-content{
-  /* border: 1px solid rgb(221, 221, 25); */
+  border: 1px solid red;
   display: flex;
   height: 350px;
+  color: gold;
 }
 .footer .footer-content .footer-section{
   flex: 1;
   padding: 25px;
   padding-right: 50px;
   padding-left: 75px;
+}
+
+.foot-text{
+  color: white;
 }
 
 
@@ -98,8 +103,5 @@ li a{
   font-family: 'Lora', serif;
 } */
 
-body{
-  font-family: 'Raleway', sans-serif;
-}
 
 
