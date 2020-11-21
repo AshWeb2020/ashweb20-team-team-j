@@ -2,7 +2,7 @@
 
 // create connection
 $dbpassword = getenv('MYSQLPASS') ?? "";
-$conn = mysqli_connect('localhost', 'root', $dbpassword , 'gj2022');
+$conn = mysqli_connect('localhost', 'root', $dbpassword , 'GJ2022');
 
 // check connection
 if (!$conn) {
