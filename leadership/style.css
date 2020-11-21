@@ -54,6 +54,10 @@
 	padding-right: 50px;
 	padding-left: 75px;
 }
+
+.foot-text{
+	color: white;
+  }
 html, body{
 	height: 100%
 	padding: 0px;
