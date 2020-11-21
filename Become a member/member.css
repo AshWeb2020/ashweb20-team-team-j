@@ -63,12 +63,12 @@ li a{
 
 .footer{
   background: #800000;
-  color: #d3d3d3;
+  color: gold;
   height: 400px;
 }
 .footer .footer-bottom{
   background: #6b0000;
-  color: #686868;
+  color: white;
   height: 50px;
   text-align: center;
   width: 100%;
@@ -80,12 +80,17 @@ li a{
   border: 1px solid red;
   display: flex;
   height: 350px;
+  /* color: gold; */
 }
 .footer .footer-content .footer-section{
   flex: 1;
   padding: 25px;
   padding-right: 50px;
   padding-left: 75px;
+}
+
+.foot-text{
+  color: white;
 }
 
 

@@ -34,7 +34,7 @@
 				<div class="collapse navbar-collapse" id="menu-icon">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item active"><a class="nav-link" href="../index.html">Home</a></li>
-                        <li class="nav-item active"><a class="nav-link" href="../Become a member/member.html">Become A Member</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="../Become a member/member.html" style="color: gold;">Become A Member</a></li>
                         <li class="nav-item active"><a class="nav-link" href="../UpcomingActivities/activities.html">Upcoming Events</a></li>
                         <li class="nav-item active"><a class="nav-link" href="../leadership/leadership.html">Leadership</a></li>
                         <li class="nav-item active"><a class="nav-link" href="../sprint-1/donate.html">Donate</a></li>
@@ -79,7 +79,7 @@
                     
                   <div class="form-group col-md-9">
                     <label>Email address</label>
-                    <input type="email" class="form-control" name="mail" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="eg. kanye.west@ashesi.edu.gh" required onkeyup="validation()">
+                    <input type="email" class="form-control" name="mail" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="eg. kanye.west@ashesi.edu.gh" >
                     <span id="text"></span>
                   </div>
       
@@ -124,7 +124,7 @@
                   </div>
                 
       
-                  <button type="submit" class="btn btn-primary btn-block" name="submit">Submit</button>
+                  <button type="submit" class="btn btn-primary btn-block" name="submit" onclick="validatePassword(); validation()">Submit</button>
                 </form>
       
               <!-- </section>
@@ -145,10 +145,10 @@
         </div>
         <div class="footer-section link">
           <h1>Useful Links</h1>
-          <p><a href="">Become A Member</a></p>
-          <p><a href="">Activities</a></p>
-          <p><a href="">Donate</a></p>
-          <p><a href="">Leadership</a></p>
+          <p><a href="../Become a member/member.html"class = 'foot-text' >Become A Member</a></p>
+          <p><a href="../UpcomingActivities/activities.html" class = 'foot-text'>Activities</a></p>
+          <p><a href="../leadership/leadership.html" class = 'foot-text'>Donate</a></p>
+          <p><a href="../sprint-1/donate.html" class = 'foot-text'>Leadership</a></p>
         </div>
         <div class="footer-section link">
           <h1>Contact Us</h1>
@@ -177,7 +177,7 @@
       }
     }
 
-    document.getElementsByName("submit")[0].onclick = validatePassword;
+    // document.getElementsByName("submit")[0].onclick = validatePassword;
 
     function validation(){
       var form = document.getElementById("form");
@@ -186,16 +186,10 @@
       var pattern = /^[a-z\.-]+@ashesi.edu.gh$/gi;
 
       if(email.match(pattern)){
-        exampleInputEmail1.classList.add("valid");
-        exampleInputEmail1.classList.remove("invalid");
-        text.innerHTML = "Valid";
-        text.style.color = "green";
+        exampleInputEmail1.setCustomValidity("");
       }
       else{
-        exampleInputEmail1.classList.remove("valid");
-        exampleInputEmail1.classList.add("invalid");
-        text.innerHTML = "Enter a valid ashesi email!";
-        text.style.color = "red";
+        exampleInputEmail1.setCustomValidity("Enter a valid ashesi email");
       }
     }
   </script>
