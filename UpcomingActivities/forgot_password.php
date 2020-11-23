@@ -4,6 +4,8 @@ require_once '../vendor/autoload.php';
 session_start();
 $errors = array();
 
+$dbpassword = getenv('MYSQLPASS') ?? "";
+
 $conn = mysqli_connect('localhost', 'root', $dbpassword , 'GJ2022');
 
 // check connection
@@ -73,7 +75,7 @@ if (isset($_POST['forgot-password'])){
 		$result = mysqli_query($conn, $sql);
 		$user = mysqli_fetch_assoc($result);
 		$_SESSION['email'] = $user['email'];
-		$id = $user['user_id'];
+		$id = $user['person_id'];
 		sendPasswordResetLink($email, $id);
 		header('location: password_message.php');
 		exit(0);
