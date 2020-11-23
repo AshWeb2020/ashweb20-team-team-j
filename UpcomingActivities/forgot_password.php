@@ -43,7 +43,7 @@ function sendPasswordResetLink($userEmail, $userID){
 
  		Please click on the link below to reset your password.
  		</p>
- 		<a href="http://localhost/ashweb20-team-team-j/UpcomingActivities/reset_password.php">Reset your password</a>
+ 		<a href="http://teamj.northeurope.cloudapp.azure.com/ashweb20-team-team-j/UpcomingActivities/reset_password.php">Reset your password</a>
  	</div>
  </body>
  </html>';
