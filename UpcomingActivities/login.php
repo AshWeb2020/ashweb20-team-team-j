@@ -15,15 +15,10 @@ $upass = $_POST['psw'];
 $activity = $_POST['Activity'];
 
 // write query
-$sql = "SELECT * FROM membership WHERE email = '$mail'";
+$sql = "SELECT * FROM membership WHERE email = '$mail' LIMIT 1";
 
 // execute query
 $result = mysqli_query($conn, $sql);
-
-// check that exactly 1 row was returned
-if (mysqli_num_rows($result) != 1) {
-    die('login failed');
-}
 
 
 // get query result as an array
