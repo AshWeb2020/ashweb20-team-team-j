@@ -11,6 +11,7 @@ if(isset($_POST['reset-password-btn'])){
 	if($password !== $passwordconf){
 		$errors['password'] = "The two passwords do not match";
 	}
+	$dbpassword = getenv('MYSQLPASS') ?? "";
 
 	$conn = mysqli_connect('localhost', 'root', $dbpassword , 'GJ2022');
 
