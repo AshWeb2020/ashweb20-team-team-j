@@ -24,6 +24,7 @@ if (mysqli_num_rows($result) != 1) {
     die('login failed');
 }
 
+
 // get query result as an array
 $user = mysqli_fetch_assoc($result);
 
@@ -38,4 +39,7 @@ if ($verify_pass) {
 	echo("<script>alert('password is incorrect!')</script>");
 	echo("<script>window.location = 'activities.html';</script>");
 }
+
+
+
  ?>
